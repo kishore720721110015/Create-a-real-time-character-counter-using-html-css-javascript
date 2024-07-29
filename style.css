@@ -1,0 +1,25 @@
+.sec{
+    max-width: 650px;
+    margin: 150px auto;
+    border: 1px solid black;
+    padding: 15px;
+    background-color: rgb(228, 182, 102);
+    border-radius: 10px;
+    border-color:rgb(149, 102, 20) ;
+}
+p{
+    font: bold;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.in{
+    width: 85%;
+    padding-bottom: 60px;
+    border: none;
+    border-radius: 5px;
+}
+.btn{
+    display: flex;
+    flex-direction: row;
+    gap: 320px;
+}

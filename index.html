@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>charactercounter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+
+</head>
+<body>
+    <div class="sec">
+        <div class="box">
+            <p>Real-time character counter<p>
+            <input class="in" name="text" id="msg" placeholder="Please write your text here..." maxlength="50">
+            <div class="btn">
+            <h4 class="tot" id="total">Total Characters : 0</h4>
+            <h4 class="re" id="rem">Remaining : 50</h4>
+        </div>
+        </div>
+    </div>
+</body>
+    <script>
+        const input = document.getElementById('msg');
+        const charCount = document.getElementById('rem');
+        const totalChars = document.getElementById('total');
+
+        input.addEventListener('input', () =>{
+            const enteredChars = input.value.length;
+            const remainingChars = 50 - enteredChars;
+
+            totalChars.textContent = `Totalcharacters: ${enteredChars}`;
+            charCount.textContent =` Remaining: ${remainingChars}`;
+        });
+    </script>
+</html>
